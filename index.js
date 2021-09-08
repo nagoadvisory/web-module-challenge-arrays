@@ -1,5 +1,7 @@
 /*REMEMBER TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
 
+const { arrayExpression } = require("@babel/types");
+
 /* 👀 This is your data ⬇ */
 const originalFlavors = [
   "Banana Nut Fudge",
@@ -151,9 +153,12 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(arr, flavor){
-  let flav1 = console.log(arr.indexOf(flavor));
-  return arr.splice (flav1, 1);
+  let nindex = arr.indexOf(flavor);
+  arr.splice (nindex, 1);
+  return arr;
 }
+
+console.log('Task 777',Example1.indexOf("Rocky Road"));
 
 console.log('Task 6a',Example1[28]);
 
@@ -191,8 +196,7 @@ function filterByWord(arr, keyword){
 return newArr1;
 }
 
-// to copy new array: const newArray = array.slice()
-
+console.log('Task 7',filterByWord(Example1,"Vanilla"));
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 

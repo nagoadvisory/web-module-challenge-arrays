@@ -67,10 +67,10 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 const Example1 = [...originalFlavors];
 
 function is31Flavors(arr){
-  if (arr.length = 31){
-      console.log('Task 2',true);
+  if (arr.length === 31){
+      return ('Task 2',true);
     } else {
-      console.log('Task 2',false);
+      return('Task 2',false);
   }
 }
 
@@ -114,7 +114,7 @@ function removeLastFlavor(arr){
  return arr;
 }
 
-console.log(removeLastFlavor(originalFlavors));
+// console.log(removeLastFlavor(originalFlavors));
 
 
 
@@ -129,10 +129,11 @@ Use the getFlavorByIndex function below to do the following:
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-  /*your code here*/
+function getFlavorByIndex(arr, anyIndex){
+  return(arr[anyIndex]);
 }
 
+console.log(getFlavorByIndex(originalFlavors,2));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 

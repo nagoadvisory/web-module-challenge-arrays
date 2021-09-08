@@ -133,7 +133,7 @@ function getFlavorByIndex(arr, anyIndex){
   return(arr[anyIndex]);
 }
 
-console.log(getFlavorByIndex(originalFlavors,2));
+console.log('Task 5',getFlavorByIndex(originalFlavors,2));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
@@ -150,9 +150,14 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(arr, flavor){
+  let flav1 = console.log(arr.indexOf(flavor));
+  return arr.splice (flav1, 1);
 }
+
+console.log('Task 6a',Example1[28]);
+
+console.log('Task 6',removeFlavorByName(Example1,"Rocky Road"));
 
 
 
@@ -176,9 +181,17 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(arr, keyword){
+  let newArr1 = [];
+  for (let i = 0; i < arr.length; i++){
+    if(arr[i].includes(keyword)){
+      newArr1.push(arr[i]);
+  }
 }
+return newArr1;
+}
+
+// to copy new array: const newArray = array.slice()
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
